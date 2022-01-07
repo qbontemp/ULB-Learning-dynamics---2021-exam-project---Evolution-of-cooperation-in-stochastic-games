@@ -27,7 +27,7 @@ Reproducing our data amounts to running the programs (python files with names be
 
 Note that before calling the interpreter, it is necessary to add the other locations to the python path (the prisoner_dilemma/ folder and the two files MonteCarlo.py and Strategy.py). On Linux, this can be done by setting the PYTHONPATH environment variable as follows: 
 				
-	``` export PYTHONPATH=location1:location2:...:$PYTHONPATH```
+	export PYTHONPATH=location1:location2:...:$PYTHONPATH
 
 ### generating the figures
 The figures corresponding to each experiment can be obtained by running the corresponding python file in the folder **experiments/figureGenerators/**. 
