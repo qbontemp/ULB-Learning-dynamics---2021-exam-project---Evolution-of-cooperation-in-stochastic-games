@@ -92,7 +92,7 @@ class GeneratorMemoryOne():
         """
         self.error = error
         self.stratList = []
-        self.maxLenght = 4
+        self.maxLength = 4
         self.generate("")
 
     def generate(self, strategy):
@@ -101,10 +101,7 @@ class GeneratorMemoryOne():
                 st = strategy + i
                 self.generate(st)
         else:
-            if (not self.states):
-                self.stratList.append(MemoryOne(strategy, self.error))
-            else:
-                self.stratList.append(MemoryOneState(strategy, self.error))
+            self.stratList.append(MemoryOne(strategy, self.error))
 
     def getStrategies(self):
         return self.stratList
